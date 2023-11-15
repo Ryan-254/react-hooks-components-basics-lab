@@ -16,17 +16,30 @@ function Home() {
   );
 }
 
-{/* write an <About> component here */}
-
-
-function App() {
+function About() {
   return (
+    <div id="about">
+      <h2>About</h2>
+    </div>
+  )
+}
+
+const App = () => {
+  return(
     <div>
+      {/* Rendering NavBar component*/}
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+
+      {/* Rendering Home component*/}
+      <Home />
+
+      {/* Rendering About component*/}
+      <About />
     </div>
   );
 }
+
+{/* write an <About> component here */}
+
 
 export default App;
